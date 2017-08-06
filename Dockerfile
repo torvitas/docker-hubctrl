@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:stretch
 
-RUN apt-get update && apt-get install git libusb-dev build-essential
+RUN apt-get update && apt-get install git libusb-dev build-essential -y
 RUN cd ~ && git clone https://github.com/codazoda/hub-ctrl.c && cd hub-ctrl.c && gcc -o hub-ctrl hub-ctrl.c -lusb
 
 COPY ./src/ /
