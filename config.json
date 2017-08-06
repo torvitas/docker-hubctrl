@@ -1,0 +1,10 @@
+{
+  "name": "Water Pump",
+  "version": "1",
+  "slug": "water_pump",
+  "description": "Water pump power control.",
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {}
+}
